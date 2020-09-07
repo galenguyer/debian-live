@@ -13,3 +13,7 @@ lb config \
     --linux-packages "linux-image linux-headers" \
     --backports true
 ```
+
+Run `sudo lb build` after making any edits to the configs to generate an ISO, which will be located at `./live-image-amd64.hybrid.iso`
+
+ZFS packages will be installed, but you can run the script provided in /root to ensure they are present and loaded
